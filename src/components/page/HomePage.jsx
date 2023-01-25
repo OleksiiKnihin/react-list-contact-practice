@@ -1,7 +1,8 @@
 import { useSelector } from 'react-redux';
 import { selectUsers } from 'redux/usersSelectors';
-import { deleteUser } from 'redux/usersSlice';
+import { deleteUser, toggleStatus } from 'redux/usersSlice';
 import { useDispatch } from 'react-redux';
+import Avatar from 'react-avatar';
 
 export const HomePage = () => {
   const users = useSelector(selectUsers);
@@ -24,10 +25,16 @@ export const HomePage = () => {
           return (
             <tr key={id}>
               <td>{index + 1}</td>
-              <td></td>
+              <td>
+                <Avatar name={name} size="40" round />
+              </td>
               <td>{name}</td>
               <td>{age}</td>
-              <td>{status}</td>
+              <td>
+                <span onClick={() => dispatch(toggleStatus(id))}>
+                  {status === 'yes' ? 'online' : 'offline'}
+                </span>
+              </td>
               <td>
                 <button type="button" onClick={() => dispatch(deleteUser(id))}>
                   Delete
