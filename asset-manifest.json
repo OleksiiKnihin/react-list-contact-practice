@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-list-contact-practice/static/css/main.7acaea2f.css",
-    "main.js": "/react-list-contact-practice/static/js/main.429c11c3.js",
+    "main.js": "/react-list-contact-practice/static/js/main.ec44408d.js",
     "index.html": "/react-list-contact-practice/index.html",
     "main.7acaea2f.css.map": "/react-list-contact-practice/static/css/main.7acaea2f.css.map",
-    "main.429c11c3.js.map": "/react-list-contact-practice/static/js/main.429c11c3.js.map"
+    "main.ec44408d.js.map": "/react-list-contact-practice/static/js/main.ec44408d.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.429c11c3.js"
+    "static/js/main.ec44408d.js"
   ]
 }
